@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Air Paint</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1f1c2c, #928dab);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: #fff;
+        }
+
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 48px;
+            margin-top: 30px;
+        }
+
+        .p1 {
+            font-size: 20px;
+            color: #f0f0f0;
+            margin-bottom: 20px;
+        }
+
+        #bg {
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            border: 3px solid #fff;
+            max-width: 90%;
+            height: auto;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to Virtual Air Paint</h2>
+    <p class="p1">powered by <span style="color: #ffd700;">OpenCV and Mediapipe</span></p>
+
+    <img id="bg" src="{{ url_for('video_feed') }}" alt="Live Paint Feed">
+
+    <footer>
+        &copy; 2025 | Created by Your Team • Flask | OpenCV | Mediapipe
+    </footer>
+</body>
+</html>
