@@ -14,3 +14,8 @@ Python 3.x
 OpenCV library (pip install --upgrade opencv-python)
 Mediapipe library(python -m pip install mediapipe)
 hand_tracking_module.py
+
+To run on local machine without a Flask server: python painter.py
+
+To run as a local host on a Flask server.
+Run the Flask app: python app.py
